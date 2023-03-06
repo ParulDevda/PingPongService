@@ -28,6 +28,8 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+	 <packaging>jar</packaging>
+
 
 	<build>
 		<plugins>
@@ -36,6 +38,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+		<finalName>PingPongServer</finalName>
 	</build>
 
 </project>

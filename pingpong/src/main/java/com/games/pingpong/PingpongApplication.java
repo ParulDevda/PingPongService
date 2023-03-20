@@ -11,7 +11,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author pdevda
  *
  */
+
 @SpringBootApplication
+//@SpringBootApplication(exclude={MongoAutoConfiguration.class})
 public class PingpongApplication {
 
 	public static void main(String[] args) {

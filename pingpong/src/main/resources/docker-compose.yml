@@ -1,0 +1,13 @@
+services:
+  localmongodb:
+    image: mongo:latest
+    container_name: localmongodb
+    ports:
+      - 27017:27017
+  pingpongserver2:
+    image: pingpongserver2
+    container_name: pingpongserver2
+    ports:
+      - 8080:8080
+    links:
+      - localmongodb
